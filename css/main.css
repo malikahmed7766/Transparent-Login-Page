@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+[type="email"] {
+  text-transform: lowercase;
+}
+
+[type="password"] {
+  text-transform: none;
+}
+
+a,i,span,svg,img {
+  display: block;
+}
+
+.login-board hr {
+  height: 0.5px;
+  width: 80%;
+  margin: 30px auto;
+  background: #f0efef;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/bg.jpg") no-repeat center center/cover;
+  z-index: -1;
+}
+
+.login .login-board {
+  width: 60%;
+  min-height: 70vh;
+  position: relative;
+}
+
+.login .login-board::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #050142;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 7px;
+}
+
+.login-board .login-title {
+  padding: 15px;
+  text-align: center;
+  background: #08016d75;
+  color: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.login-board .login-title h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.login-form .form {
+  /* background-color: red; */
+  max-width: 65%;
+  margin: 30px auto;
+}
+
+.form .form-group {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.form .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  font-size: 20px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.form .form-group input:focus {
+  border-color: #40c7fc;
+}
+
+.form .form-group .btn {
+  display: block;
+  width: 100%;
+  padding: 10px 13px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.1s linear;
+}
+
+.form .form-group .btn:hover {
+  background: #02ac79;
+  border-color: #02ac79;
+}
+
+.form .form-group .btn:active {
+  background: #01835c;
+  border-color: #01835c;
+}
+
+.login-feature .feature-title {
+  text-align: center;
+}
+
+.login-feature h3 {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.login-feature h3::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -105px;
+  height: 2px;
+  width: 100px;
+  background: #fff;
+  z-index: -1;
+}
+
+.login-feature h3::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -105px;
+  height: 2px;
+  width: 100px;
+  background: #fff;
+  z-index: -1;
+}
+
+.log-feature {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  column-gap: 20px;
+}
+
+.log-feature a img {
+  width: 45px;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.log-feature a:hover img {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.flower {
+    width: 170px;
+    height: 160px;
+    background: no-repeat center center / cover;
+    animation: ImgRotate 5.5s linear infinite;
+    position: absolute;
+    z-index: 1023;
+}
+
+.flower.flower-1{
+    top: -4px;
+    left: 4px;
+    background-image: url('../img/f-1.jpg');
+}
+
+.flower.flower-2{
+    top: -4px;
+    right: 4px;
+    background-image: url('../img/f-2.jpg');
+}
+
+.flower.flower-3{
+    left: 4px;
+    bottom: 8px;
+    background-image: url('../img/f-3.jpg');
+}
+
+.flower.flower-4{
+    right: 4px;
+    bottom: 8px;
+    background-image: url('../img/f-4.jpg');
+}
+
+@keyframes ImgRotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
